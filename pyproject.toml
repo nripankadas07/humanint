@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humanint"
+version = "0.1.0"
+description = "Parse and format human-readable integers (1.5k, 2M, 3.2B)."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "nripankadas07" }]
+keywords = ["human-readable", "integer", "parse", "format", "numbers"]
+requires-python = ">=3.9"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/humanint"
+
+[tool.setuptools.packages.find]
+where = ["src"]
