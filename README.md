@@ -18,7 +18,7 @@ format(1234, precision=3)  # "1.234K"
 ## Install
 
 ```bash
-pip install humanint
+python -m pip install -e .
 ```
 
 From source:
